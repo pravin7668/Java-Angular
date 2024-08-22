@@ -1,0 +1,305 @@
+1. Which of the following method does not belong to the Object class?
+
+A) toString() B) equals() C) run() D) hashCode()
+
+Answer: C) run()
+
+__________________________________________________________________________________
+
+2. Identify the relationship in this code:
+
+
+class Mcq {}
+class Hackthon {}
+class Main {
+   public static void main(String[] args) {
+      Hackthon h = new Hackthon();
+      Mcq m = new Mcq();
+   }
+}
+A) is-a B) Inheritance C) constructor D) Has-A
+
+Answer: D) Has-A
+__________________________________________________________________________________
+
+3. What would be output for the below code?
+
+class Example1 {
+   public void show(double x) {
+      System.out.println("Double  " +x);
+   }
+   public void show(String x) {
+      System.out.println("String " +x);
+   }
+   public void show(Object x) {
+      System.out.println("Object  " +x);
+   }
+   public static void main(String[] args) {
+      new Example1().show(12);
+   }
+}
+A) Double 12 B) String 12 C) Object 12 D) Runtime Error
+
+Answer: C) Object 12
+__________________________________________________________________________________
+
+4. What is the output for the below code?
+
+
+class Test {
+   static int score;
+   public void increment() {
+      score++;
+      System.out.println(score);
+   }
+   public static void main(String[] args) {
+      Test obj1 = new Test();   
+      Test obj2 = new Test();
+      Test obj3 = new Test();
+      obj1.increment();       
+      obj2.increment();
+      obj3.increment();
+   }
+}
+A) 1 1 1 B) 0 0 0 C) 1 2 3 D) Runtime Error
+
+Answer: C) 1 2 3
+__________________________________________________________________________________
+
+5. Identify the syntax to implement inheritance:
+
+A) class First {
+}
+class Second implements First {
+}
+
+B) class First {
+}
+class Second : First {
+}
+
+C) class First {
+}
+
+class Second extends First {
+}
+D) 
+class First {
+}
+class Second extend First {
+}
+
+Answer: C) class Second extends First {}
+__________________________________________________________________________________
+
+6. Identify the output for the below code:
+
+
+enum Example {
+   X,Y,Z,A,B
+}
+class Hello {
+   private Example() {
+      System.out.println("infinite");
+   }
+   public static void main(String[] args) {
+      Example e = Example.A;
+   }
+}
+A) Error as no constructor in enum B) Prints infinite 5 times C) Prints infinite 1 time D) Runtime Error
+
+Answer: A) Error as no constructor in enum
+__________________________________________________________________________________
+7. Identify the output for the below code:
+
+
+class Hello {
+   static boolean flag;
+   public static void main(String[] args) {
+      System.out.println(flag);
+   }
+}
+A) Compile Time Error B) false C) Runtime Error D) true
+
+Answer: B) false
+__________________________________________________________________________________
+
+8. Write the syntax to add an interface to a derived class:
+
+A) class Derived extends Base, interface_name B) class Derived implements base, interface_name C) class Derived extends Base implements interface_name D) class Derived implements Base extends interface_name
+
+Answer: C) class Derived extends Base implements interface_name
+__________________________________________________________________________________
+9. Which statement(s) are true?
+
+(i) Interface methods are public and abstract by default
+(ii) Interface contains default methods
+(iii) Interface variables are final by default
+(iv) Interface can be added to a class using the implements keyword
+
+A) statement ii B) statements ii, iii C) statements i, iii, iv D) All the above
+
+Answer: C) Statements i, iii, iv
+__________________________________________________________________________________
+
+10. What would be the output for the below code?
+
+
+class Test {
+   public static void main(String[] args) {
+      int x=12;
+      System.out.println(x++ + x++ + ++x);
+   }
+}
+A) 40 B) 39 C) 38 D) 41
+
+Answer: B) 39
+__________________________________________________________________________________
+
+11. What would be the output for the below code?
+
+
+class Hello {
+   public void show() {
+      if (null == null) {
+         System.out.println("Hi");
+      } else {
+         System.out.println("Bye");
+      }
+   }
+   public static void main(String[] args) {
+      new Hello().show();
+   }
+}
+A) Compile Time Error B) Runtime Error C) Hi D) Bye
+
+Answer: C) Hi
+__________________________________________________________________________________
+
+12. What is true in inheritance in Java?
+
+(i) Multiple inheritance is supported in Java using classes
+(ii) We cannot pass data from the derived class to the base class
+(iii) super keyword is used to call base class methods in the derived class
+(iv) We cannot make the same base class method in the derived class
+
+A) i B) iii C) ii D) iv
+
+Answer: B) iii
+__________________________________________________________________________________
+13. Which statement(s) are true w.r.t. IS-A relation?
+
+(i) IS-A relationship uses extends keyword
+(ii) IS-A relationship is additionally used for code reusability in Java and to avoid code redundancy.
+(iii) IS-A relationship is tightly coupled, which means changing one entity will affect another entity.
+(iv) IS-A relationship is unidirectional
+
+A) i B) All C) iii D) ii
+
+Answer: B) All
+__________________________________________________________________________________
+14. What would be the output for the below code?
+
+class Main {
+   public static void main() {
+      System.out.println("Hello");
+   }
+   public static void main(int x) {
+      System.out.println("Infinite");
+   }
+   public static void main(String[] args) {
+      System.out.println("Test Main");
+   }
+} 
+A) Hello B) Test Main C) Compile Time Error D) Runtime Error
+
+Answer: B) Test Main
+__________________________________________________________________________________
+15. Which method of Object class returns an int value?
+
+A) equals() B) toString() C) hashCode() D) None
+
+Answer: C) hashCode()
+__________________________________________________________________________________
+16. What would be the output for the below code?
+
+class First {
+   void show() {
+      System.out.println("Class Second...");
+   }
+}
+
+class Second extends First {
+   void show() {
+      System.out.println("Class First...");
+   }
+   public static void main(String[] args) {
+      new Second().show();
+   }
+}
+A) class First B) Class Second C) Compile Time Error D) Runtime Error
+
+Answer: B) Class First
+__________________________________________________________________________________
+17. Identify which line throws an error:
+
+class Hello {
+   private String s1 = "Hello";
+   public String s2 = "Bye";
+   protected String s3 = "Infinite";
+}
+
+class Main {
+   public static void main(String[] args) {
+      Hello hello = new Hello(); // line 1
+      hello.s1; // line 2
+      hello.s2; // line 3
+      hello.s3; // line 4
+   }
+}
+A) line 1 B) line 2 C) line 3 D) line 4
+
+Answer: B) line 2
+__________________________________________________________________________________
+
+18. Which is true about Abstract classes?
+
+(i) Abstract class contains abstract/non-abstract methods
+(ii) Abstract class contains a constructor
+(iii) We can return an object of Abstract Class
+(iv) We cannot create direct objects to an abstract class
+
+A) i B) ii, iv C) i, ii, iv D) All the Above
+
+Answer: C) i, ii, iv
+__________________________________________________________________________________
+19. What would be the output for the below code?
+
+class Main {
+   public static void main(String[] args) {
+      String str = "Hello";
+      System.out.println(str.concat(" World"));
+   }
+}
+A) Hello B) Hello World C) Compile Time Error D) Runtime Error
+
+Answer: B) Hello World
+__________________________________________________________________________________
+20. What would be the output for the below code?
+
+class Cricket {
+   static int score;
+   public void increment(int x) {
+      score += x;
+   }
+   public static void main(String[] args) {
+      new Cricket().increment(12);
+      new Cricket().increment(7);
+      new Cricket().increment(10);
+      System.out.println(score);
+   }
+}
+A) 12 B) 10 C) 7 D) 29
+
+Answer: D) 29
+__________________________________________________________________________________

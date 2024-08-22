@@ -1,0 +1,167 @@
+1. What would be the output for the code below?
+class P1 {
+   public static void main(String[] args) {
+      System.out.println("5" + 3 + 8);
+      System.out.println("5" + (3 + 8));
+      System.out.println("5+3" + 8);
+   }
+}
+A) Compile time error B) Runtime error C) 538 511 5+38 D) 511 511 511
+
+Answer: C) 538 511 5+38
+____________________________________________________________________________________
+
+2. What would be the output for the code below?
+class P2 {
+   public static void main(String[] args) {
+      int i = 10;
+      int j = i++;
+      System.out.println(i);
+   }
+}
+A) 10 10 B) 11 11 C) 10 11 D) 11 10
+
+Answer: D) 11 10
+____________________________________________________________________________________
+
+3. What would be the output for the code below?
+
+class P3 {
+   public static void main(String[] args) {
+      int i = 10;
+      int j = i++ + i++ + ++i + ++i + i++;
+      System.out.println(j);
+   }
+}
+A) 62 B) 58 C) 61 D) 59
+
+Answer: A) 62
+____________________________________________________________________________________
+
+4. What would be the output for the code below?
+
+class P4 {
+   public static void main(String[] args) {
+      int ch = 'A';
+      System.out.println(ch);
+   }
+}
+A) Compile time error B) Runtime error C) 65 D) No Output
+
+Answer: C) 65
+____________________________________________________________________________________
+
+5. What would be the output for the code below?
+
+class P5 {
+   public static void main(String[] args) {
+      int x;
+      System.out.println(x);
+   }
+}
+A) Compile Time Error B) Runtime Error C) No Output D) 0
+
+Answer: A) Compile Time Error
+____________________________________________________________________________________
+
+6. What would be the output for the code below?
+
+class P7 {
+   boolean climate;
+   public static void main(String[] args) {
+      System.out.println(new P7().climate);
+   }
+}
+A) true B) false C) Compile Time Error D) Runtime Error
+
+Answer: B) false
+____________________________________________________________________________________
+
+7. Identify which statements are true or false:
+
+Overloaded methods should differ in argument list
+Overloaded methods may differ in return type
+Overloaded methods may differ in access specifier
+A) False True True B) True True True C) True False False D) True True True
+
+Answer: B) True True True
+____________________________________________________________________________________
+8. What would be the output for the code below?
+public class Hello extends String {
+   public static void main(String[] args) {
+      System.out.println("Hello World...");
+   }
+}
+A) Compile Time Error B) Runtime Error C) Hello World D) No Output
+
+Answer: A) Compile Time Error
+____________________________________________________________________________________
+
+9. A Thread can be created by:
+
+A) Extending Thread Class B) Implementing Runnable C) Both the Above D) None of the Above
+
+Answer: C) Both the Above
+____________________________________________________________________________________
+10. What would be the output for the code below?
+
+public class Test implements Runnable {
+   public static void main(String[] args) {
+      Test t = new Test();
+      t.run();    
+      t.start();
+   }
+   public void run() {
+      System.out.println("run-test");
+   } 
+}
+A) run-test run-test B) run-test C) Compile Time Error D) Runtime Error
+
+Answer: C) Compile Time Error
+____________________________________________________________________________________
+
+11. Which tag should be used to pass information from JSP to included JSP?
+
+A) Using <%jsp:page> tag
+B) Using <%jsp:param> tag
+C) Using <%jsp:import> tag
+D) Using <%jsp:useBean> tag
+
+Answer: B) Using <%jsp:param> tag
+____________________________________________________________________________________
+12. Which is not a directive?
+
+A) include
+B) page
+C) export
+D) useBean
+
+Answer: C) export
+____________________________________________________________________________________
+13. Which is mandatory in <jsp:useBean /> tag?
+
+A) id, class
+B) id, type
+C) type, property
+D) type, id
+
+Answer: A) id, class
+____________________________________________________________________________________
+14. In JSP Action tags, which tags are used for bean development?
+
+A) jsp:useBean
+B) jsp:setProperty
+C) jsp:getProperty
+D) All mentioned above
+
+Answer: D) All mentioned above
+____________________________________________________________________________________
+15. Which of the following is an advantage of the statement "Separation of business logic from JSP"?
+
+A) Custom Tags in JSP
+B) JSP Standard Tag Library
+C) All the above
+D) None of the above
+
+Answer: C) All the above
+____________________________________________________________________________________
